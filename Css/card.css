@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&family=Nabla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&display=swap');
+
+.card-container {
+    font-family: "Anton SC", sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    gap: 20px;
+    margin-top: 10px;
+    margin: 0 30px;
+
+}
+
+.card {
+    color: #ddd;
+    background: rgb(12 12 12);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(19, 17, 17, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+
+}
+
+.card .content {
+    padding: 20px;
+}
+
+.card .content h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.card .content p {
+    font-size: 1em;
+    color: #858484;
+}
+
+.texto {
+    font-family: "Anton SC", sans-serif;
+    font-size: 20px;
+    padding: 25px 25px 20px;
+    color: #ffffff;
+
+}
+
+.icone {
+    display: flex;
+    justify-content: left;
+    text-decoration: none;
+    font-size: 40px;
+    padding-left: 5px;
+    color: rgb(248, 248, 248);
+}
+
+@media (max-width: 600px) {
+    .card {
+        width: 100%;
+        max-width: 100%;
+    }
+}
